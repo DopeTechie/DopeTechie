@@ -1,132 +1,160 @@
-* {
-  font-family: "Open Sans", sans-serif;
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-  color: white;
-  margin: 0px auto;
-  height: 99vh;
-  background-color: #674baf;
-  background-image: url("bg-desktop.svg");
-  background-repeat: no-repeat;
-}
+body{
+    color: white;
 
-.logo {
-  width: 10rem;
-  padding-bottom: 3.1rem;
-  padding-left: 1.5rem;
-  padding-top: 1.8rem;
-}
-.logo img {
-  width: 10rem;
-}
-
-.center {
-  width: 100%;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90vw;
-}
-
-.center img {
-  width: 85%;
-}
-.center .content {
-  text-align: center;
-}
-.center .content p {
-  font-size: 0.9em;
-  font-weight: 300;
-  margin: 0em 2.7rem 1.7rem 2.7rem;
-}
-
-.center .content h2
-{
-  font-family: "Poppins", sans-serif;
-  margin-left: 2.2em;
-  margin-right: 2.2em;
-  font-size: 1.3em;
-  font-weight: 400;
-}
-.center .content button {
-  color: #674baf;
-  border-radius: 25px;
-  width: 55%;
-  height: 3em;
-  font-size: 0.7em;
-  background-color: white;
-  box-shadow: 2px 3px 7px -2px #343434;
-  border-width: 0;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 3.5em;
-  margin-bottom: 2.5em;
-}
-
-  .social button {
-  color: white;
-  font-weight: normal;
-  margin: 0.5em;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  border: 1px solid white;
-  background-color: transparent;
-}
+    background-color: hsl(0, 100%, 74%);
+    background-image:url(bg-intro-desktop.png);
 
 
-@media only screen and (min-width: 960px) {
-  body {
+}
+
+.container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
     justify-content: center;
-  }
+    padding: 50px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
 
-  .logo {
-    padding-top: 0px;
-    padding-left: 4rem;
-  }
+.container>div{
+    flex: 1;
+    padding: 0 20px;
+}
 
-  .center {
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0px auto;
-  }
+.heading{
+    font-size: 40px;
+    line-height: 50px;
+}
 
-  .center img {
-    width: 50vw;
-  }
-  .center .content {
-    text-align: start;
-    margin-top: 3.5rem;
-    width: 42vw;
-  }
+.left-para{
+    font-size: 14px;
+    opacity: 0.8;
+ }
 
-.center .content h2
- {
-    margin-left: 2.3rem;
-    margin-right: 0rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .center .content p {
-    font-size: 1rem;
-    margin-left: 2.3rem;
-  }
-  .center .content button {
-    width: 25%;
-    margin-left: 2.3rem;
-  }
+ .box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
 
-  .social {
-    justify-content: flex-end;
-    margin-top: -2rem;
-    margin-right: 8rem;
-  }
+}
+
+.boxhead{
+    background-color: #5D54A3;
+    padding: 20px;
+}
+
+.box p{
+    margin: 0;
+
+}
+
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+.form-control small{
+    position: absolute;
+    text-align: right;
+    right: 0;
+    opacity: 0;
+    bottom: -30px;
+    color:hsl(0, 100%, 74%);
+}
+
+input{
+    display: block;
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1.5px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus{
+    border: 2px solid #5D54A3;
+    outline: none;
+}
+
+.form-control.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
+.form-control img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+}
+
+.form-control.error img{
+    opacity: 1;
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    display: block;
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid  hsl(154, 59%, 40%) ;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0 4px  hsl(154, 59%, 40%);
+    margin-bottom: 10px;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0 0  hsl(154, 59%, 40%);
+    transform: translateY(2px);
+}
+
+small{
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+small a{
+    font-size: 12px;
+    text-decoration: none;
+    color:  hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width:768px){
+   
+    .container{
+        flex-direction: column;
+    }
+   
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
 }
