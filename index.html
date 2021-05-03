@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="left-side-content" >
-          <h1 class="heading">Learn to code by watching others </h1>
-    
-          <p class="left-para">  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-          but understanding how developers think is invaluable. </p>
-    </div>
-    <div>
-      <div class="box boxhead">
-        <p>
-          <strong>Try it free 7 days</strong> then $20/mo. thereafter
-        </p>
-      </div>
-      <div class="box">
-        <form id="form">
-          <div class="form-control">
-            <input type="text" id="firstname" placeholder="First Name">
-            <img src="icon-error.svg" alt="error-icon">
-            <small></small>
-          </div>
-          <div class="form-control">
-            <input type="text" id="lastname" placeholder="Last Name">
-            <img src="icon-error.svg" alt="error-icon">
-            <small></small>
-          </div>
-          <div class="form-control">
-            <input type="email" id="email" placeholder="Email Address">
-            <img src="icon-error.svg" alt="error-icon">
-            <small></small>
-          </div>
-          <div class="form-control">
-            <input type="password" id="password" placeholder="Password">
-            <img src="icon-error.svg" alt="error-icon">
-            <small></small>
-          </div>
-          <button>
-            Claim your free trial
-          </button>
-          <small>     
-             By clicking the button, you are agreeing to our 
-             <a href="#">Terms and Services
-  
-             </a>
-          </small>
-        </form> 
+
+  <main class="container">
+    <div class="card card--orange">
+        <div class="card__content">
+            <img src="icon-sedans.svg" alt="sedan car logo">
+            <h2 class="card__title">SEDANS</h2>
+            <p class="card__text">
+              Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+              or on your next road trip.
+            </p>
+            <a class="btn btn--orange" href="#">Learn More</a>
         </div>
       </div>
+      <div class="card card--cyan">
+        <div class="card__content">
+          <img src="icon-suvs.svg" alt="suv car logo">
+          <h2 class="card__title">SUVS</h2>
+          <p class="card__text">
+            Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+            and off-road adventures.
+          </p>
+          <a class="btn btn--cyan" href="#">Learn More</a>
+        </div>
     </div>
-</body>
-</html>
+    </div>
+    <div class="card card--dark-cyan">
+      <div class="card__content">
+        <img src="icon-luxury.svg" alt="luxury car logo">
+        <h2 class="card__title">LUXURY</h2>
+        <p class="card__text">
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+          rental and arrive in style.
+        </p>
+        <a class="btn btn--dark-cyan" href="#">Learn More</a>
+      </div>
+    </div>
 
-
-
-
-
-
-</body>
+  </main>
+  </body>
+  </html>
